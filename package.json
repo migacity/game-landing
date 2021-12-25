@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build --base=/game-landing/",
-    "deploy": "gh-pages -d dist",
+    "build": "vue-tsc --noEmit && vite build",
+    "deploy": "vite build --base=/game-landing/ && gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
