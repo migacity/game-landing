@@ -3,9 +3,14 @@ import conceptArt from './assets/123.webp'
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap");
-div {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;900&display=swap');
+.title h1, .title h2 {
   font-family: "Noto Serif JP", serif;
+  font-weight: 900;
+}
+main, footer {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 400;
 }
 </style>
 
