@@ -12,16 +12,14 @@
     </section>
 
     <section class="container px-5 py-5 mx-auto flex flex-col text-center">
-      <h2 class="text-xl underline">
-        作品情報
-      </h2>
+        <h2 class="text-xl underline">作品情報</h2>
       <ul class="mt-5">
         <li>製作陣：みが市メンバー有志（募集中）</li>
         <li>作品タイトル：未定</li>
-        <li>ジャンル：未定</li>
-        <li>製作期間：未定</li>
-        <li>キービジュアル：未定</li>
-        <li>対応プラットフォーム：未定</li>
+          <li>ジャンル：ノベルゲーム（フリーゲーム）</li>
+          <li>製作期間：3ヶ月程度を目安としています</li>
+          <li>対応プラットフォーム：ブラウザ</li>
+          <li>公開方法：ノベルゲーム投稿サイトや専用ウェブサイトで一般公開</li>
       </ul>
     </section>
 
