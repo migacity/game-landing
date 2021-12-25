@@ -11,32 +11,52 @@ div {
 
 <template>
   <div class="bg-white relative w-full h-screen">
-    <header class="container h-full">
-      <section class="flex flex-col text-center">
-        <img class="absolute h-full min-w-full object-cover" :src="conceptArt" />
+    <header class="h-full">
+      <section class="title flex flex-col text-center">
+        <img class="absolute h-full min-w-full object-cover object-center" :src="conceptArt" />
         <h1 class="mt-16 z-10 text-3xl" id="新作ゲーム制作決定">新作ゲーム制作決定！</h1>
-        <h2 class="z-10 text-xl mt-8" id="続報を待て">製作チームメンバー募集中</h2>
+        <h2 class="z-10 text-xl mt-4" id="続報を待て">製作チームメンバー募集中</h2>
+      </section>
+      <section class="container mt-6 px-5 py-5 mx-auto flex flex-col text-center">
+        <h2 class="z-10 text-xl underline" id="新着情報">新着情報</h2>
+        <ul class="z-10 mt-5">
+          <li><span class="px-2 text-xs">2021/12/25</span>コンセプトアートを公開しました。</li>
+        </ul>
       </section>
     </header>
     <main>
       <section class="container px-5 py-5 mx-auto flex flex-col text-center">
         <h2 class="text-xl underline">作品情報</h2>
-        <ul class="mt-5">
-          <li>製作陣：みが市メンバー有志（募集中）</li>
-          <li>作品タイトル：未定</li>
-          <li>ジャンル：ノベルゲーム（フリーゲーム）</li>
-          <li>製作期間：3ヶ月程度を目安としています</li>
-          <li>対応プラットフォーム：ブラウザ</li>
-          <li>公開方法：ノベルゲーム投稿サイトや専用ウェブサイトで一般公開</li>
-        </ul>
+        <table class="mt-5">
+          <tbody class="border-b border-gray-200">
+            <tr class="border-t border-gray-200">
+              <td class="text-left bg-gray-100 px-2">制作陣</td>
+              <td class="text-left px-2">みが市メンバー有志（募集中）</td>
+            </tr>
+            <tr class="border-t border-gray-200">
+              <td class="text-left bg-gray-100 px-2">作品タイトル</td>
+              <td class="text-left px-2">未定</td>
+            </tr>
+            <tr class="border-t border-gray-200">
+              <td class="text-left bg-gray-100 px-2">ジャンル</td>
+              <td class="text-left px-2">ノベルゲーム（フリーゲーム）</td>
+            </tr>
+            <tr class="border-t border-gray-200">
+              <td class="text-left bg-gray-100 px-2">制作期間</td>
+              <td class="text-left px-2">目安として3ヶ月程度</td>
+            </tr>
+            <tr class="border-t border-gray-200">
+              <td class="text-left bg-gray-100 px-2">対応プラットフォーム</td>
+              <td class="text-left px-2">ブラウザ</td>
+            </tr>
+            <tr class="border-t border-gray-200">
+              <td class="text-left bg-gray-100 px-2">公開方法</td>
+              <td class="text-left px-2">ノベルゲーム投稿サイトや専用ウェブサイトで一般公開</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
-      <section class="container px-5 py-5 mx-auto flex flex-col text-center">
-        <h2 class="text-xl underline" id="新着情報">新着情報</h2>
-        <ul class="mt-5">
-          <li>2021/12/25: コンセプトアートを公開しました。</li>
-        </ul>
-      </section>
     </main>
     <footer class="text-gray-600 bod-font">
       <div class="container px-5 py-8 mx-auto flex items-center flex-col">
