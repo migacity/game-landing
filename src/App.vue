@@ -1,16 +1,17 @@
 <script setup lang="ts">
+import conceptArt from './assets/123.webp'
 </script>
 
 <template>
-<div class="bg-white relative w-full h-screen py-12">
-  <header>
-  </header>
-  <main >
-    <section class="container px-5 py-24 mx-auto w-3/4 flex flex-col text-center border rounded-xl shadow">
-      <h1 class="text-3xl w-" id="新作ゲーム制作仮決定">新作ゲーム制作（仮）決定！</h1>
-      <h2 class="text-xl mt-8" id="続報を待て">続報を待て</h2>
+  <div class="bg-white relative w-full h-screen">
+    <header class="container h-full">
+      <section class="flex flex-col text-center">
+        <img class="absolute h-full min-w-full object-cover" :src="conceptArt" />
+        <h1 class="mt-16 z-10 text-3xl" id="新作ゲーム制作決定">新作ゲーム制作決定！</h1>
+        <h2 class="z-10 text-xl mt-8" id="続報を待て">製作チームメンバー募集中</h2>
     </section>
-
+    </header>
+    <main>
     <section class="container px-5 py-5 mx-auto flex flex-col text-center">
         <h2 class="text-xl underline">作品情報</h2>
       <ul class="mt-5">
@@ -26,7 +27,7 @@
     <section class="container px-5 py-5 mx-auto flex flex-col text-center">
       <h2 class="text-xl underline" id="新着情報">新着情報</h2>
       <ul class="mt-5">
-        <li>製作チームメンバー募集中</li>
+          <li>2021/12/25: コンセプトアートを公開しました。</li>
       </ul>
     </section>
   </main>
