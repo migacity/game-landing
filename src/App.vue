@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import conceptArt from './assets/123.webp'
+import BgmControl from './components/BgmControl.vue';
 </script>
 
 <style>
@@ -15,6 +16,7 @@ main, footer {
 </style>
 
 <template>
+  <bgm-control></bgm-control>
   <div class="bg-white relative w-full h-screen">
     <header class="h-full">
       <section class="title flex flex-col text-center">
