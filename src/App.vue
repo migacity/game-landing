@@ -27,7 +27,7 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
       </div>
     </header>
 
-    <main class="w-full flex flex-col gap-4 justify-center">
+    <main class="w-full flex flex-col gap-4 justify-center mt-8">
       <section class="flex flex-col gap-4">
         <h2 class="flex justify-center text-2xl">遊ぶ</h2>
         <div class="flex gap-4 justify-center">
@@ -36,9 +36,9 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
         </div>
       </section>
 
-      <section>
+      <section class="w-2/3 mx-auto p-2 bg-white/25 rounded-lg">
         <h2 class="flex justify-center text-2xl">ストーリー</h2>
-        <p class="w-2/3 mx-auto">
+        <p>
           人類が滅亡した世界<br />
           <br />
           自然はかつての豊かさを取り戻し<br />
@@ -57,7 +57,7 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
       </section>
 
       <section>
-        <div class="w-2/3 mx-auto">
+        <div class="w-2/3 mx-auto p-2 bg-white/25 rounded-lg">
           <h2 class="flex justify-center text-2xl">舞台設定</h2>
           <h3 class="flex justify-center text-xl">研究所</h3>
           <p>本作の主人公ロイドが暮らす研究所。博士のほか数人が永い眠りについているようだ。周辺に森や海がある。</p>
@@ -80,7 +80,7 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
         <img src="https://placehold.jp/320x180.jpg" />
       </section>
 
-      <section class="characters flex flex-col gap-2">
+      <section class="characters flex flex-col gap-2 w-2/3 mx-auto p-2 bg-white/25 rounded-lg">
         <h2 class="flex justify-center text-2xl">キャラクター</h2>
 
         <div>
@@ -113,7 +113,7 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
         </div>
       </section>
 
-      <section>
+      <section class="w-2/3 mx-auto p-2 bg-white/25 rounded-lg">
         <h2 class="flex justify-center text-2xl">スタッフ</h2>
         <ul>
           <li>シナリオ
@@ -228,9 +228,5 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 ul {
   @apply mx-8;
   @apply list-disc;
-}
-
-.characters div {
-  @apply w-1/2 mx-auto;
 }
 </style>
