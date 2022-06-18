@@ -2,6 +2,11 @@
 import { ref } from 'vue';
 import conceptArt from './assets/top_illust.webp'
 import logoImage from './assets/7a8481eb2e97d5e6.webp'
+import ss_001 from './assets/ss_001.webp'
+import ss_002 from './assets/ss_002.webp'
+import ss_003 from './assets/ss_003.webp'
+import ss_004 from './assets/ss_004.webp'
+import ss_005 from './assets/ss_005.webp'
 import BgmControl from './components/BgmControl.vue';
 
 const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
@@ -76,8 +81,11 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 
       <section class="flex flex-col gap-4">
         <h2 class="flex justify-center text-2xl">プレイ画面</h2>
-        <img src="https://placehold.jp/320x180.jpg" />
-        <img src="https://placehold.jp/320x180.jpg" />
+        <img :src="ss_001" />
+        <img :src="ss_002" />
+        <img :src="ss_003" />
+        <img :src="ss_004" />
+        <img :src="ss_005" />
       </section>
 
       <section class="characters flex flex-col gap-2 w-2/3 mx-auto p-2 bg-white/25 rounded-lg">
