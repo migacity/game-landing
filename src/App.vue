@@ -20,6 +20,7 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
     <header class="main-header">
       <div class="logo-container">
         <bgm-control class="bgm-control" />
+        <div class="h-40 z-20 bg-cover" :style="logodiv"></div>
       </div>
       <div class="header-image" :style="conceptartdiv">
       </div>
@@ -34,39 +35,21 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 
       <section>
         <h2 class="flex justify-center text-2xl">ストーリー</h2>
-        <p class="w-1/2 mx-auto">
-          人類は滅びた<br />
+        <p class="w-2/3 mx-auto">
+          人類が滅亡した世界<br />
           <br />
-          それに伴い自然はかつての豊かさを取り戻し<br />
+          自然はかつての豊かさを取り戻し<br />
+          生命の息吹は回復の兆しを見せつつある<br />
           <br />
-          消えたはずの動物たちも数を増やし<br />
+          そんな中に青年の姿をしたアンドロイドが<br />
+          無機質な部屋に佇んでいた<br />
           <br />
-          人によって滅ぼされた命の息吹は<br />
-          <br />
-          回復の兆しを見せつつあった<br />
-          <br />
-          <br />
-          そんな中、無機質な機械音だけが鳴り響く一室に<br />
-          <br />
-          一人の青年がいた<br />
-          <br />
-          正確に言うと但し滅びたはずの人間ではなく<br />
-          <br />
-          青年の姿をしたアンドロイドである<br />
-          <br />
-          彼が見つめる先にあるのは４つのカプセル<br />
-          <br />
-          中にいるのは4人の女性<br />
-          <br />
-          <br />
+          彼が見つめるのはカプセルの中で眠る４人の少女たち<br />
           <br />
           これは<br />
           <br />
-          <br />
-          <br />
-          人とアンドロイドが紡ぐ<br />
-          <br />
-          苦しくも儚いどうしようもなく終わってしまった物語
+          アンドロイドと少女が紡ぐ<br />
+          儚く切ない終焉の物語
         </p>
       </section>
 
