@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import conceptArt from './assets/top_illust.webp'
+import logoImage from './assets/7a8481eb2e97d5e6.webp'
 import BgmControl from './components/BgmControl.vue';
 
 const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
@@ -20,9 +21,9 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
     <header class="main-header">
       <div class="logo-container">
         <bgm-control class="bgm-control" />
-        <div class="h-40 z-20 bg-cover" :style="logodiv"></div>
       </div>
-      <div class="header-image" :style="conceptartdiv">
+      <div class="header-image flex items-center justify-center" :style="conceptartdiv">
+        <img :src="logoImage" class="h-40 drop-shadow-[0_10px_10px_rgba(0,0,0,1.00)]" />
       </div>
     </header>
 
@@ -54,7 +55,7 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
       </section>
 
       <section>
-        <div class="w-1/2 mx-auto">
+        <div class="w-2/3 mx-auto">
           <h2 class="flex justify-center text-2xl">舞台設定</h2>
           <h3 class="flex justify-center text-xl">研究所</h3>
           <p>本作の主人公ロイドが暮らす研究所。博士のほか数人が永い眠りについているようだ。周辺に森や海がある。</p>
