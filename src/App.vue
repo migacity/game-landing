@@ -1,6 +1,9 @@
 <script setup lang="ts">
-import conceptArt from './assets/123.webp'
+import { ref } from 'vue';
+import conceptArt from './assets/top_illust.webp'
 import BgmControl from './components/BgmControl.vue';
+
+const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 </script>
 
 <style>
@@ -16,11 +19,9 @@ import BgmControl from './components/BgmControl.vue';
   <div class="w-full">
     <header class="main-header">
       <div class="logo-container">
-        <img id="logo"
-          src="https://placehold.jp/24/3d4070/ffffff/250x71.jpg?text=%E6%B7%B1%E6%B7%B5%E3%81%AE%E3%82%A2%E3%83%B3%E3%83%89%E3%83%AD%E3%83%A1%E3%83%80" />
         <bgm-control class="bgm-control" />
       </div>
-      <div class="header-image h-64">
+      <div class="header-image" :style="conceptartdiv">
       </div>
     </header>
 
@@ -235,7 +236,7 @@ import BgmControl from './components/BgmControl.vue';
 }
 
 .header-image {
-  background-image: url('https://placehold.jp/96/70739e/ffffff/640x360.png?text=%E3%83%98%E3%83%83%E3%83%80%E3%83%BC%E7%94%BB%E5%83%8F');
+  @apply h-64 bg-local bg-bottom bg-cover;
 }
 
 ul {
