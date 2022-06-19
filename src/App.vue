@@ -13,12 +13,6 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;900&display=swap');
-
-* {
-  font-family: "Noto Serif JP", serif;
-  font-weight: 400;
-}
 </style>
 
 <template>
@@ -129,8 +123,8 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 
       <section class="w-2/3 mx-auto p-2 bg-white/25 rounded-lg">
         <h2 class="flex justify-center text-2xl">スタッフ</h2>
-        <ul>
-          <li>シナリオ
+        <ul class="stafflist">
+          <li><h3>シナリオ</h3>
             <ul>
               <li>ゆぅさん</li>
               <li>かがり</li>
@@ -139,7 +133,7 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
             </ul>
           </li>
 
-          <li>グラフィック
+          <li><h3>グラフィック</h3>
             <ul>
               <li>ゆぅさん</li>
               <li>かがり</li>
@@ -149,20 +143,20 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
             </ul>
           </li>
 
-          <li>デザイン協力
+          <li><h3>デザイン協力</h3>
             <ul>
               <li>頭痛</li>
               <li>ぬのひと</li>
             </ul>
           </li>
 
-          <li>オリジナルBGM
+          <li><h3>オリジナルBGM</h3>
             <ul>
               <li>止由</li>
             </ul>
           </li>
 
-          <li>スクリプト
+          <li><h3>スクリプト</h3>
             <ul>
               <li>idomshi</li>
               <li>純硫黄</li>
@@ -171,40 +165,40 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
             </ul>
           </li>
 
-          <li>アドバイザー
+          <li><h3>アドバイザー</h3>
             <ul>
               <li>タク</li>
             </ul>
           </li>
 
-          <li>素材提供
+          <li><h3>素材提供</h3>
             <ul>
 
-              <li>BGM,SE
+              <li><h4>BGM,SE</h4>
                 <ul>
-                  <li>効果音ラボ 様</li>
-                  <li>効果音辞典 様</li>
-                  <li>効果音工房 様</li>
-                  <li>魔王魂 様</li>
+                  <li><a href="https://soundeffect-lab.info/">効果音ラボ 様</a></li>
+                  <li><a href="https://sounddictionary.info/">効果音辞典 様</a></li>
+                  <li><a href="https://umipla.com">効果音工房 様</a></li>
+                  <li><a href="https://maou.audio/category/bgm/">魔王魂 様</a></li>
                 </ul>
               </li>
 
-              <li>背景
+              <li><h4>背景</h4>
                 <ul>
-                  <li>ぱくたそ 様</li>
-                  <li>ニコ二・コモンズ 様</li>
+                  <li><a href="https://www.pakutaso.com/">ぱくたそ 様</a></li>
+                  <li><a href="https://commons.nicovideo.jp/">ニコ二・コモンズ 様</a></li>
                 </ul>
               </li>
             </ul>
           </li>
 
-          <li>テストプレイ
+          <li><h3>テストプレイ</h3>
             <ul>
               <li>みが市 有志</li>
             </ul>
           </li>
 
-          <li>制作
+          <li><h3>制作</h3>
             <ul>
               <li>らいあ市</li>
             </ul>
@@ -227,6 +221,29 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+* {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Noto Sans JP', sans-serif; 
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Noto Sans JP', sans-serif; 
+  font-weight: 400;
+}
+
+h4 {
+  font-family: 'Noto Sans JP', sans-serif; 
+  font-weight: 400;
+}
+
 .logo-container {
   position: absolute;
 }
@@ -241,6 +258,34 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 
 ul {
   @apply mx-8;
-  @apply list-disc;
+}
+
+.stafflist {
+  @apply text-xl flex flex-row flex-wrap;
+  text-align: center;
+}
+
+.stafflist > li {
+  @apply mt-4 block w-64 mx-auto;
+}
+
+.stafflist h3 {
+  @apply text-base text-cyan-900;
+  font-family: 'Noto Sans JP', sans-serif; 
+  font-weight: 400;
+}
+
+.stafflist h4 {
+  @apply text-sm mt-2 text-cyan-700;
+  font-family: 'Noto Sans JP', sans-serif; 
+  font-weight: 400;
+}
+
+.stafflist > li > ul {
+  @apply text-base;
+}
+
+.stafflist > li > ul > li > ul {
+  @apply mt-1;
 }
 </style>
