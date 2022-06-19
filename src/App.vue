@@ -23,7 +23,7 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 
 <template>
   <div class="w-full bg-gradient-to-b from-[#8fc0ff] to-[#d4eafb]">
-    <header class="main-header">
+    <header class="main-header shadow-md">
       <div class="logo-container">
         <bgm-control class="bgm-control" />
       </div>
