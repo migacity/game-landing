@@ -208,10 +208,10 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
         </ul>
       </section>
 
-      <section>
+      <!-- <section>
         <h2 class="flex justify-center text-2xl">ダウンロード</h2>
         <p>PC・Mac用のダウンロードリンクを置く</p>
-      </section>
+      </section> -->
     </main>
 
     <footer class="">
