@@ -188,7 +188,7 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
               <li><h4>背景</h4>
                 <ul>
                   <li><a href="https://www.pakutaso.com/">ぱくたそ 様</a></li>
-                  <li><a href="https://commons.nicovideo.jp/">ニコ二・コモンズ 様</a></li>
+                  <li><a href="https://commons.nicovideo.jp/">ニコニ・コモンズ 様</a></li>
                 </ul>
               </li>
             </ul>
