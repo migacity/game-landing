@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import conceptArt from './assets/top_illust.webp'
-import logoImage from './assets/7a8481eb2e97d5e6.webp'
+import logoImage from './assets/logo.webp'
 import ss_001 from './assets/ss_001.webp'
 import ss_002 from './assets/ss_002.webp'
 import ss_003 from './assets/ss_003.webp'
@@ -28,7 +28,7 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
         <bgm-control class="bgm-control" />
       </div>
       <div class="header-image flex items-center justify-center" :style="conceptartdiv">
-        <img :src="logoImage" class="h-40 drop-shadow-[0_10px_10px_rgba(0,0,0,1.00)]" />
+          <img :src="logoImage" class="h-40 z-20" />
       </div>
     </header>
 
