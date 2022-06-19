@@ -27,8 +27,8 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
       <div class="logo-container">
         <bgm-control class="bgm-control" />
       </div>
-      <div class="header-image flex items-center justify-center" :style="conceptartdiv">
-          <img :src="logoImage" class="h-40 z-20" />
+      <div class="header-image flex items-start justify-start" :style="conceptartdiv">
+        <img :src="logoImage" class="ml-8 mt-4 h-28 z-20 md:h-32 lg:h-40" />
       </div>
     </header>
 
@@ -230,7 +230,7 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 }
 
 .header-image {
-  @apply h-64 bg-local bg-bottom bg-cover;
+  @apply h-64 bg-local bg-bottom bg-cover lg:h-80 xl:h-96;
 }
 
 ul {
