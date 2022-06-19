@@ -258,10 +258,6 @@ h4 {
   @apply h-64 bg-local bg-bottom bg-cover lg:h-80 xl:h-96;
 }
 
-ul {
-  @apply mx-8;
-}
-
 .stafflist {
   @apply text-xl flex flex-row flex-wrap;
   text-align: center;
