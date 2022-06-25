@@ -70,13 +70,15 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
       </section>
 
       <section class="flex flex-col gap-4">
-        <h2 class="flex justify-center text-2xl">プレイ画面</h2>
-        <div class="flex gap-2 justify-center flex-col md:flex-row md:flex-wrap m-auto">
-          <img :src="ss_001" class="w-full md:w-72" />
-          <img :src="ss_002" class="w-full md:w-72" />
-          <img :src="ss_003" class="w-full md:w-72" />
-          <img :src="ss_004" class="w-full md:w-72" />
-          <img :src="ss_005" class="w-full md:w-72" />
+        <div class="w-2/3 mx-auto p-2 bg-white/25 rounded-lg">
+          <h2 class="flex justify-center text-2xl">プレイ画面</h2>
+          <div class="flex gap-2 justify-center flex-col md:flex-row md:flex-wrap m-auto">
+            <img :src="ss_001" class="w-full md:w-5/12" />
+            <img :src="ss_002" class="w-full md:w-5/12" />
+            <img :src="ss_003" class="w-full md:w-5/12" />
+            <img :src="ss_004" class="w-full md:w-5/12" />
+            <img :src="ss_005" class="w-full md:w-5/12" />
+          </div>
         </div>
       </section>
 
@@ -267,17 +269,17 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 }
 
 h2 {
-  font-family: 'Noto Sans JP', sans-serif; 
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
 }
 
 h3 {
-  font-family: 'Noto Sans JP', sans-serif; 
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
 }
 
 h4 {
-  font-family: 'Noto Sans JP', sans-serif; 
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
 }
 
