@@ -7,7 +7,7 @@ import ss_002 from './assets/ss_002.webp'
 import ss_003 from './assets/ss_003.webp'
 import ss_004 from './assets/ss_004.webp'
 import ss_005 from './assets/ss_005.webp'
-import BgmControl from './components/BgmControl.vue';
+import TwitterLink from './components/TwitterLink.vue';
 
 const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 </script>
@@ -18,9 +18,6 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 <template>
   <div class="w-full bg-gradient-to-b from-[#8fc0ff] to-[#d4eafb]">
     <header class="main-header shadow-md">
-      <div class="logo-container">
-        <bgm-control class="bgm-control" />
-      </div>
       <div class="header-image flex items-start justify-start" :style="conceptartdiv">
         <img :src="logoImage" class="ml-8 mt-4 h-28 z-20 md:h-32 lg:h-40" />
       </div>
@@ -30,8 +27,15 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
       <section class="flex flex-col gap-4">
         <h2 class="flex justify-center text-2xl">遊ぶ</h2>
         <div class="flex gap-4 justify-center">
-          <p class="h-16 w-60 bg-gray-50 rounded-md flex justify-center items-center shadow-lg">ブラウザで遊ぶ</p>
-          <p class="h-16 w-60 bg-gray-50 rounded-md flex justify-center items-center shadow-lg">ダウンロードして遊ぶ</p>
+          <div class="h-16 w-60 bg-transparent border-2 rounded-md flex flex-col justify-center items-center shadow-lg">
+            <span class="font-sans font-bold">Coming soon!</span><span class="text-sm">ノベルコレクションにて審査中</span>
+          </div>
+        </div>
+      </section>
+      <section class="w-2/3 mx-auto p-2 bg-white/25 rounded-lg">
+        <h2 class="flex justify-center text-2xl">最新情報</h2>
+        <div class="flex gap-0 justify-center items-center">
+          check for twitter &nbsp; <twitter-link name="raiacity" class="underline">@raiacity</twitter-link>!
         </div>
       </section>
 
@@ -74,13 +78,15 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
       </section>
 
       <section class="flex flex-col gap-4">
-        <h2 class="flex justify-center text-2xl">プレイ画面</h2>
-        <div class="flex gap-2 justify-center flex-col md:flex-row md:flex-wrap m-auto">
-          <img :src="ss_001" class="w-full md:w-72" />
-          <img :src="ss_002" class="w-full md:w-72" />
-          <img :src="ss_003" class="w-full md:w-72" />
-          <img :src="ss_004" class="w-full md:w-72" />
-          <img :src="ss_005" class="w-full md:w-72" />
+        <div class="w-2/3 mx-auto p-2 bg-white/25 rounded-lg">
+          <h2 class="flex justify-center text-2xl">プレイ画面</h2>
+          <div class="flex gap-2 justify-center flex-col md:flex-row md:flex-wrap m-auto">
+            <img :src="ss_001" class="w-full md:w-5/12" />
+            <img :src="ss_002" class="w-full md:w-5/12" />
+            <img :src="ss_003" class="w-full md:w-5/12" />
+            <img :src="ss_004" class="w-full md:w-5/12" />
+            <img :src="ss_005" class="w-full md:w-5/12" />
+          </div>
         </div>
       </section>
 
@@ -123,60 +129,96 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
         </div>
       </section>
 
-      <section class="w-2/3 mx-auto p-2 bg-white/25 rounded-lg">
+      <section class="w-2/3 mx-auto p-3 bg-white/25 rounded-lg">
         <h2 class="flex justify-center text-2xl">スタッフ</h2>
         <ul class="stafflist">
-          <li><h3>シナリオ</h3>
+          <li>
+            <h3>原案</h3>
+            <ul>
+              <li>dolphilia</li>
+              <li class="name-item">かがり <twitter-link name="qTsaK7ZhvNFYtsT"></twitter-link></li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>シナリオ</h3>
+            <ul>
+              <li class="name-item">ゆぅさん <twitter-link name="mofumaru_yu"></twitter-link>
+              </li>
+              <li>かがり</li>
+              <li class="name-item">みやまくわがた <twitter-link name="agoganihon"></twitter-link></li>
+              <li>dolphilia</li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>グラフィック</h3>
             <ul>
               <li>ゆぅさん</li>
               <li>かがり</li>
               <li>みやまくわがた</li>
               <li>dolphilia</li>
+              <li class="name-item">hisayosi <twitter-link name="hisayosi1987"></twitter-link></li>
             </ul>
           </li>
 
-          <li><h3>グラフィック</h3>
-            <ul>
-              <li>ゆぅさん</li>
-              <li>かがり</li>
-              <li>みやまくわがた</li>
-              <li>dolphilia</li>
-              <li>hisayosi</li>
-            </ul>
-          </li>
-
-          <li><h3>デザイン協力</h3>
+          <li>
+            <h3>デザイン協力</h3>
             <ul>
               <li>頭痛</li>
               <li>ぬのひと</li>
             </ul>
           </li>
 
-          <li><h3>オリジナルBGM</h3>
+          <li>
+            <h3>オリジナルBGM</h3>
             <ul>
-              <li>止由</li>
+              <li>
+                <h4>楽曲</h4>
+                <ul>
+                  <li>止由<twitter-link name="masa_chuu"></twitter-link></li>
+                </ul>
+              </li>
+              <li>
+                <h4>歌</h4>
+                <ul>
+                  <li>ちっぷす</li>
+                </ul>
+              </li>
             </ul>
           </li>
 
-          <li><h3>スクリプト</h3>
+          <li>
+            <h3>ナレーション</h3>
             <ul>
-              <li>idomshi</li>
+              <li>ちっぷす</li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>スクリプト</h3>
+            <ul>
+              <li class="name-item">idomshi <twitter-link name="idomshi"></twitter-link></li>
               <li>純硫黄</li>
               <li>ゆぅさん</li>
               <li>dolphilia</li>
             </ul>
           </li>
 
-          <li><h3>アドバイザー</h3>
+          <li>
+            <h3>アドバイザー</h3>
             <ul>
               <li>タク</li>
+              <li class="name-item">ギムレット <twitter-link name="mariaasamiya"></twitter-link></li>
             </ul>
           </li>
 
-          <li><h3>素材提供</h3>
+          <li>
+            <h3>素材提供</h3>
             <ul>
 
-              <li><h4>BGM,SE</h4>
+              <li>
+                <h4>BGM,SE</h4>
                 <ul>
                   <li><a href="https://soundeffect-lab.info/">効果音ラボ 様</a></li>
                   <li><a href="https://sounddictionary.info/">効果音辞典 様</a></li>
@@ -185,7 +227,8 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
                 </ul>
               </li>
 
-              <li><h4>背景</h4>
+              <li>
+                <h4>背景</h4>
                 <ul>
                   <li><a href="https://www.pakutaso.com/">ぱくたそ 様</a></li>
                   <li><a href="https://commons.nicovideo.jp/">ニコニ・コモンズ 様</a></li>
@@ -194,13 +237,15 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
             </ul>
           </li>
 
-          <li><h3>テストプレイ</h3>
+          <li>
+            <h3>テストプレイ</h3>
             <ul>
               <li>みが市 有志</li>
             </ul>
           </li>
 
-          <li><h3>制作</h3>
+          <li>
+            <h3>制作</h3>
             <ul>
               <li>らいあ市</li>
             </ul>
@@ -232,17 +277,17 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 }
 
 h2 {
-  font-family: 'Noto Sans JP', sans-serif; 
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
 }
 
 h3 {
-  font-family: 'Noto Sans JP', sans-serif; 
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
 }
 
 h4 {
-  font-family: 'Noto Sans JP', sans-serif; 
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
 }
 
@@ -258,36 +303,40 @@ h4 {
   @apply h-64 bg-local bg-bottom bg-cover lg:h-80 xl:h-96;
 }
 
-ul {
-  @apply mx-8;
-}
-
 .stafflist {
   @apply text-xl flex flex-row flex-wrap;
   text-align: center;
 }
 
-.stafflist > li {
-  @apply mt-4 block w-64 mx-auto;
+.stafflist>li {
+  @apply mt-4 block w-64 min-w-fit mx-auto;
 }
 
 .stafflist h3 {
   @apply text-base text-cyan-900;
-  font-family: 'Noto Sans JP', sans-serif; 
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
 }
 
 .stafflist h4 {
   @apply text-sm mt-2 text-cyan-700;
-  font-family: 'Noto Sans JP', sans-serif; 
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
 }
 
-.stafflist > li > ul {
+.stafflist>li>ul {
   @apply text-base;
 }
 
-.stafflist > li > ul > li > ul {
+.stafflist .name-item {
+  @apply flex items-center justify-center;
+}
+
+.stafflist>li>ul>li>ul {
   @apply mt-1;
+}
+
+li>a {
+  @apply underline;
 }
 </style>
