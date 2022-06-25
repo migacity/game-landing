@@ -27,7 +27,15 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
       <section class="flex flex-col gap-4">
         <h2 class="flex justify-center text-2xl">遊ぶ</h2>
         <div class="flex gap-4 justify-center">
-          <div class="h-16 w-60 bg-transparent border-2 rounded-md flex flex-col justify-center items-center shadow-lg"><span class="font-sans font-bold">Coming soon!</span><span class="text-sm">ノベルコレクションにて審査中</span></div>
+          <div class="h-16 w-60 bg-transparent border-2 rounded-md flex flex-col justify-center items-center shadow-lg">
+            <span class="font-sans font-bold">Coming soon!</span><span class="text-sm">ノベルコレクションにて審査中</span>
+          </div>
+        </div>
+      </section>
+      <section class="w-2/3 mx-auto p-2 bg-white/25 rounded-lg">
+        <h2 class="flex justify-center text-2xl">最新情報</h2>
+        <div class="flex gap-0 justify-center items-center">
+          check for twitter &nbsp; <twitter-link name="raiacity" class="underline">@raiacity</twitter-link>!
         </div>
       </section>
 
