@@ -7,7 +7,6 @@ import ss_002 from './assets/ss_002.webp'
 import ss_003 from './assets/ss_003.webp'
 import ss_004 from './assets/ss_004.webp'
 import ss_005 from './assets/ss_005.webp'
-import BgmControl from './components/BgmControl.vue';
 
 const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 </script>
@@ -18,9 +17,6 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
 <template>
   <div class="w-full bg-gradient-to-b from-[#8fc0ff] to-[#d4eafb]">
     <header class="main-header shadow-md">
-      <div class="logo-container">
-        <bgm-control class="bgm-control" />
-      </div>
       <div class="header-image flex items-start justify-start" :style="conceptartdiv">
         <img :src="logoImage" class="ml-8 mt-4 h-28 z-20 md:h-32 lg:h-40" />
       </div>
