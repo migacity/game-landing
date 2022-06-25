@@ -30,8 +30,7 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
       <section class="flex flex-col gap-4">
         <h2 class="flex justify-center text-2xl">遊ぶ</h2>
         <div class="flex gap-4 justify-center">
-          <p class="h-16 w-60 bg-gray-50 rounded-md flex justify-center items-center shadow-lg">ブラウザで遊ぶ</p>
-          <p class="h-16 w-60 bg-gray-50 rounded-md flex justify-center items-center shadow-lg">ダウンロードして遊ぶ</p>
+          <div class="h-16 w-60 bg-transparent border-2 rounded-md flex flex-col justify-center items-center shadow-lg"><span class="font-sans font-bold">Coming soon!</span><span class="text-sm">ノベルコレクションにて審査中</span></div>
         </div>
       </section>
 
