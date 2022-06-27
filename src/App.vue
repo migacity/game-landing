@@ -261,10 +261,8 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
       </section> -->
     </main>
 
-    <footer class="">
-      <div class="">
-        <p>copyright raia-city</p>
-      </div>
+    <footer class="px-4 py-2 mt-2 bg-white rounded-lg shadow flex items-center justify-center">
+        <p class="">&copy; 2022 らいあ市</p>
     </footer>
   </div>
 </template>
