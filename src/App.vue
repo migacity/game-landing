@@ -27,9 +27,11 @@ const conceptartdiv = ref(`background-image: url("${conceptArt}")`)
       <section class="flex flex-col gap-4">
         <h2 class="flex justify-center text-2xl">遊ぶ</h2>
         <div class="flex gap-4 justify-center">
-          <div class="h-16 w-60 bg-transparent border-2 rounded-md flex flex-col justify-center items-center shadow-lg">
-            <span class="font-sans font-bold">Coming soon!</span><span class="text-sm">ノベルコレクションにて審査中</span>
-          </div>
+          <a href="https://novelgame.jp/games/show/6721">
+            <div class="px-6 py-2 bg-emerald-300/25 border-2 rounded-md flex flex-col justify-center items-center shadow-lg text-center hover:bg-teal-200/50 hover:shadow-sm hover:translate-y-0.5">
+              <span class="font-sans font-bold">ノベコレで遊ぶ</span><span class="text-sm">ノベルコレクションのサイトに<br />ジャンプします</span>
+            </div>
+          </a>
         </div>
       </section>
       <section class="w-2/3 mx-auto p-2 bg-white/25 rounded-lg">
